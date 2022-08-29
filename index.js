@@ -662,7 +662,7 @@ class Results {
 
     if (newValues === 'No range!') {
       return;
-    }s
+    }
 
     const valuesContainers = this.getValuesContainers();
 
