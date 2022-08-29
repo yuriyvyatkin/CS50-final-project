@@ -61,7 +61,7 @@ class Calendar {
       if (this.language === 'ru') {
         monthName = monthsNamesRu[value];
       }
-  
+
       if (this.language === 'en') {
         monthName = monthsNamesEn[value];
       }
@@ -408,7 +408,7 @@ class Results {
         </tr>
         <tr>
           <td class='weeks rest' colspan='2'>
-            и 
+            и
             <span class='days-value'>0</span>
             <span class='days-name'>дней</span>
           </td>
@@ -554,14 +554,14 @@ class Results {
 
     // вычисляем количество полных месяцев, лет и остатки месяцев, недель, дней
 
-    if (initFirst.getFullYear() !== initLast.getFullYear() || 
+    if (initFirst.getFullYear() !== initLast.getFullYear() ||
         initFirst.getMonth() !== initLast.getMonth()
     ) {
       let restDays;
 
       const endFirstMonth = new Date(
         initFirst.getFullYear(),
-        initFirst.getMonth()+ 1,
+        initFirst.getMonth() + 1,
         0
       ).getDate();
 
@@ -636,7 +636,7 @@ class Results {
         }
       }
 
-      const months = initLast.getMonth() - initFirst.getMonth() + 
+      const months = initLast.getMonth() - initFirst.getMonth() +
                   12 * (initLast.getFullYear() - initFirst.getFullYear());
 
       computedValues.months.value += months;
@@ -662,7 +662,7 @@ class Results {
 
     if (newValues === 'No range!') {
       return;
-    }
+    }s
 
     const valuesContainers = this.getValuesContainers();
 
